@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/node": "^18.0.6",
     "bootstrap": "^5.3.3",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "ssi": "^0.3.0"
   }
 }
