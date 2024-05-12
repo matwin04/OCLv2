@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT || 8888;
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, "public")));
@@ -24,6 +23,5 @@ app.get("/contact", (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+
+app.listen(8880, () => console.log("Server ready on port 8880."));
